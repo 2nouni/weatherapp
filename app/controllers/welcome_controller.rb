@@ -30,10 +30,16 @@ class WelcomeController < ApplicationController
     	@url = "http://barbwire.com/wp-content/uploads/2014/02/SochiSucks.jpg"
     elsif @weather_words == "Clear"
     	@url = "http://p1.pichost.me/i/12/1352901.jpg"
+    elsif @weather_words == "Scattered Clouds"
+    	@url = "http://www.wallpapersis.com/wp-content/uploads/2014/10/Scattered-Clouds-.jpg"
+    elsif @weather_words == "Light Snow"
+    	@url = "https://weedonder.files.wordpress.com/2013/01/ph_photography-11-of-11.jpg"
     elsif @weather_words == "Partly Cloudy"
     	@url = "http://wallpoper.com/images/00/44/82/22/cloudy_00448222.jpg"
     elsif @weather_words == "Snow"
-    	@url = "http://host2post.com/server13/photos/S1H-6hjE6S1FUM~/wallpapers-trees-full-snow-cold-weather-december-mountains.jpg"
+    	@url = "http://cdn.bgr.com/2015/01/blizzard-2015.jpg"
+    elsif @weather_words == "Frost"
+    	@url = "http://74211.com/wallpaper/picture_big/Trees-Alongside-the-River-Are-Full-of-Snow-Coldness-is-Easy-to-Imagine-Yet-the-Sun-is-Coming-Out-There-is-Anticipation-HD-Natural-Scenery-Wallpaper.jpg"
     else
     	@url = "http://www.morrobayrealty.com/files/2015/04/rainy_day_wallpaper_2.jpeg"
       end
