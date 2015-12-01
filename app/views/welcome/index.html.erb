@@ -4,7 +4,7 @@
 	}
 </style>
 <div class='row'>
-  <div class='col-md-6 col-md-offset-1'>
+  <div class='col-md-6 col-md-offset-3'>
     <div class='well'>
         <h1>Look up your local forecast</h1>
         <p>What's the weather's like in your city?</p>
@@ -12,16 +12,16 @@
         <div>
             <%= form_tag index_path do %>
             
-            <%= text_field_tag :city, nil, placeholder: "City name" %><br />
+            <%= text_field_tag :city, nil, placeholder: "Enter your Zipcode or City Name" %><br />
             <%= select_tag :state, options_for_select(@states), :prompt => "Please select" %><br />
             <%= submit_tag "Check the Weather" %>
-          <% end %>    
+          <% end %>
         </div>
     </div>
   </div>
   <div class='col-md-6 col-md-offset-3'>
     <div class='well'>
-      <h1>Forecast for <%= @location %>:</h1>
+      <h1>Forecast for <%= @location %>: </h1>
       <div class='row'>
         <div class='col-md-7'>
           <p><em>What's the weather like?</em></p>

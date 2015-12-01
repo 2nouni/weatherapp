@@ -27,7 +27,7 @@ class WelcomeController < ApplicationController
         end
     end
       if @weather_words == "Overcast"
-    	@url = "http://cloud-maven.com/wp-content/uploads/2014/08/DSC_0367.jpg"
+    	@url = "http://barbwire.com/wp-content/uploads/2014/02/SochiSucks.jpg"
     elsif @weather_words == "Clear"
     	@url = "http://p1.pichost.me/i/12/1352901.jpg"
     elsif @weather_words == "Partly Cloudy"
@@ -36,6 +36,6 @@ class WelcomeController < ApplicationController
     	@url = "http://host2post.com/server13/photos/S1H-6hjE6S1FUM~/wallpapers-trees-full-snow-cold-weather-december-mountains.jpg"
     else
     	@url = "http://www.morrobayrealty.com/files/2015/04/rainy_day_wallpaper_2.jpeg"
-  end
+      end
   end
 end
