@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
+  get 'home_page/index'
+
+  get 'home_page/profile'
+
+  devise_for :users
+  
+  get 'profile/:id' => 'home_page#profile', as: :profile
+  
   # The index page gets two routes:
   get 'index' => 'welcome#index'
   # a "get" route for when we initially come to the page
   post 'index' => 'welcome#index'
   # and a "post" route for when we come back to the page
   # after submitting the form
-
+  root 'home_page#index'
   # While here, might as well change the "test" route
   get 'test' => 'welcome/test'
 
