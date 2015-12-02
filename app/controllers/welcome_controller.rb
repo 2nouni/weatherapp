@@ -18,6 +18,8 @@ class WelcomeController < ApplicationController
         else
        
     @location = response["location"]["city"]
+    @lati = response["location"]["lat"]
+    @long = response["location"]["lon"]
     @temp_f = response["current_observation"]["temp_f"]
     @temp_c = response["current_observation"]["temp_c"]
     @weather_icon = response["current_observation"]["icon_url"]
