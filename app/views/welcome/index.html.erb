@@ -11,7 +11,7 @@
         <!--A form to take city and state-->
         <div>
             <%= form_tag index_path do %>
-            
+                      
             <%= text_field_tag :city, nil, placeholder: "Enter your Zipcode or City Name" %><br />
             <%= select_tag :state, options_for_select(@states), :prompt => "Please select" %><br />
             <%= submit_tag "Check the Weather" %>
@@ -33,8 +33,9 @@
           <p><%= @weather_words %> <%= image_tag @weather_icon %></p>
           <p><%= link_to "Full Forecast", @forecast_link, target: "_blank" %></p>
     
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=<%=@lati%>%2C<%=@long%>&key=AIzaSyBhRhHMK-3Z72u-nMp3IReYH07S_W7jmxI" allowfullscreen></iframe>
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://api.meetup.com/find/groups?&sign=true&photo-host=public&zip=27601&page=20" allowfullscreen></iframe>
+<iframe width="400" height=400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=<%=@lati%>%2C<%=@long%>&key=AIzaSyBhRhHMK-3Z72u-nMp3IReYH07S_W7jmxI" allowfullscreen></iframe>
+
+<!--<iframe width="400" height=400" frameborder="0" style="border:0" src="https://api.meetup.com/2/events?key=203371c2577498039693f5e76d4727&group_urlname=ny-tech&sign=true" allowfullscreen></iframe>-->
       </div>
     </div>
   </div>

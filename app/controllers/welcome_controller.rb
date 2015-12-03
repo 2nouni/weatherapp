@@ -42,8 +42,15 @@ class WelcomeController < ApplicationController
     	@url = "http://cdn.bgr.com/2015/01/blizzard-2015.jpg"
     elsif @weather_words == "Frost"
     	@url = "http://74211.com/wallpaper/picture_big/Trees-Alongside-the-River-Are-Full-of-Snow-Coldness-is-Easy-to-Imagine-Yet-the-Sun-is-Coming-Out-There-is-Anticipation-HD-Natural-Scenery-Wallpaper.jpg"
-    else
+    elsif @weather_words == "Rain"
     	@url = "http://www.morrobayrealty.com/files/2015/04/rainy_day_wallpaper_2.jpeg"
+    elsif @weather_words == "Mostly Cloudy"
+    	@url = "http://www.wallpapersis.com/wp-content/uploads/2014/10/Scattered-Clouds-.jpg"    	
+    else
+      @url = "http://www.pemzo.com/wp-content/uploads/2014/04/h9Kyv-620x350.png"
       end
   end
+   def profile
+    @user = User.find(params[:id])
+   end
 end
