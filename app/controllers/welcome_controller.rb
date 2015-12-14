@@ -47,7 +47,7 @@ class WelcomeController < ApplicationController
     elsif @weather_words == "Mostly Cloudy"
     	@url = "http://www.wallpapersis.com/wp-content/uploads/2014/10/Scattered-Clouds-.jpg"    	
     else
-      @url = "http://www.pemzo.com/wp-content/uploads/2014/04/h9Kyv-620x350.png"
+      @url = "http://kliatravel.com/wp-content/uploads/2014/03/luxury-travel-clubs.jpg"
       end
   end
    def profile

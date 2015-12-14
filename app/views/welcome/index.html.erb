@@ -19,7 +19,7 @@
         </div>
     </div>
   </div>
-
+<section>
   <div class='col-md-6 col-md-offset-3'>
     <div class='well'>
       <h1>Forecast for <%= @location %>: </h1>
@@ -29,14 +29,35 @@
           <p>The temperature is: <%= @temp_f %>&deg; F / <%= @temp_c %> C </p>
           <p>It feels like: <%= @real_feel %> F </p>
         </div>
-            <div class='col-md-5'>
+          <div class='col-md-5'>
           <p><%= @weather_words %> <%= image_tag @weather_icon %></p>
           <p><%= link_to "Full Forecast", @forecast_link, target: "_blank" %></p>
-    
-<iframe width="400" height=400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=<%=@lati%>%2C<%=@long%>&key=AIzaSyBhRhHMK-3Z72u-nMp3IReYH07S_W7jmxI" allowfullscreen></iframe>
 
-<!--<iframe width="400" height=400" frameborder="0" style="border:0" src="https://api.meetup.com/2/events?key=203371c2577498039693f5e76d4727&group_urlname=ny-tech&sign=true" allowfullscreen></iframe>-->
-      </div>
+          <iframe width="200" height=200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=<%=@lati%>%2C<%=@long%>&key=AIzaSyBhRhHMK-3Z72u-nMp3IReYH07S_W7jmxI" allowfullscreen>
+          </iframe>
+        </div>
     </div>
   </div>
 </div>
+</section>
+
+<section class="case">
+  <ul class="unstyled">
+        <li>
+          <blockquote class="embedly-card" data-card-key="ab731efa79d743cdbdd3624f6607ac53" data-card-controls="0" data-card-width="100" data-card-align="left"><h2><a href="http://www.meetup.com/find/">Find your people - Meetup</a></h2><p>Find Meetups and meet people in your local community who share your interests.</p></blockquote>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </li>
+        <li>
+          <blockquote class="embedly-card" data-card-key="ab731efa79d743cdbdd3624f6607ac53" data-card-controls="0" data-card-width="100"><h4><a href="http://www.yelp.com/search?find_desc=&find_loc=Raleigh%2C+NC&ns=1">Yelp - Munchies</a></h4><p></p></blockquote>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </li>
+        <li>
+          <blockquote class="embedly-card" data-card-key="ab731efa79d743cdbdd3624f6607ac53" data-card-controls="0" data-card-width="100"><h4><a href="http://www.howlocal.net/users/sign_in">HOW LOCAL</a></h4><p></p></blockquote>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </li>
+        <li>
+          <blockquote class="embedly-card" data-card-key="ab731efa79d743cdbdd3624f6607ac53" data-card-controls="0" data-card-width="100"><h4><a href="http://hndrd.org/">| hndrd Foundation | We will change the world....together|</a></h4><p></p></blockquote>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </li>
+  </ul>
+</section>
